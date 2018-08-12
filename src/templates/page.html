@@ -1,0 +1,17 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<h2>Анимация на scss</h2>
+	<div class="canvas">
+		{% for i in range(1, 101) %}
+			<div class="p{{ i }}"></div>
+		{% endfor %}
+	</div>
+	<h2>Анимация на canvas</h2>
+	<canvas width="800" height="600" id="kanvasik"></canvas>		
+
+{% endblock %}
